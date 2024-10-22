@@ -31,7 +31,9 @@
         <Spinner
             android:id="@+id/spinner_main"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="50sp"
+            android:textAlignment="center"
+            android:background="@drawable/my_button_style"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonSubmit3"

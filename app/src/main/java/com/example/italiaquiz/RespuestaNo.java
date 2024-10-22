@@ -30,7 +30,7 @@ public class RespuestaNo extends AppCompatActivity {
         restartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(RespuestaNo.this,"Restarting...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RespuestaNo.this,"Reiniciando...", Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(RespuestaNo.this, MainActivity.class);
                 startActivity(myIntent);
             }

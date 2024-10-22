@@ -2,7 +2,10 @@ package com.example.italiaquiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,5 +32,14 @@ public class Final extends AppCompatActivity {
         int points = intent.getIntExtra("myPoints", 0);
         score = findViewById(R.id.scoreNum);
         score.setText(String.valueOf(points) + "/15 pts");
+
+        Button button = findViewById(R.id.replayBtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Final.this, MainActivity.class);
+                startActivity(myIntent);
+            }
+        });
     }
 }

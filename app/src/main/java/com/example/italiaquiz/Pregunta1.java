@@ -50,15 +50,15 @@ public class Pregunta1 extends AppCompatActivity {
                     selectedText = radioButton4.getText().toString();
 
                 if(selectedText.equals("Roma")){
-                    Toast.makeText(Pregunta1.this,"Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta1.this,"Correcto", Toast.LENGTH_LONG).show();
                     Intent myIntent = new Intent(Pregunta1.this, Pregunta2.class);
                     points+=3;
                     myIntent.putExtra("myPoints", points);
                     startActivity(myIntent);
                 } else if(selectedText.equals("Null")){
-                    Toast.makeText(Pregunta1.this,"Select something bro", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta1.this,"Seleccione algo", Toast.LENGTH_LONG).show();
                 } else{
-                    Toast.makeText(Pregunta1.this,"Incorrect", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta1.this,"Incorrecto", Toast.LENGTH_LONG).show();
                     Intent myIntent = new Intent(Pregunta1.this, RespuestaNo.class);
                     points-=2;
                     myIntent.putExtra("myPoints", points);

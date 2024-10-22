@@ -41,5 +41,13 @@
             android:textSize="80sp"
             android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/scoreText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/replayBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Volver"
+            android:background="@drawable/title_custom"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

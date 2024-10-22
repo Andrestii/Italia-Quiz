@@ -47,7 +47,7 @@ public class Pregunta4 extends AppCompatActivity {
                     selectedText = radioButton8.getText().toString();
 
                 if(selectedText.equals("Florencia")){
-                    Toast.makeText(Pregunta4.this,"Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta4.this,"Correcto", Toast.LENGTH_LONG).show();
                     Intent intent = getIntent();
                     int points = intent.getIntExtra("myPoints",0);
                     Intent myIntent = new Intent(Pregunta4.this, Pregunta5.class);
@@ -55,9 +55,9 @@ public class Pregunta4 extends AppCompatActivity {
                     myIntent.putExtra("myPoints", points);
                     startActivity(myIntent);
                 } else if(selectedText.equals("Null")){
-                    Toast.makeText(Pregunta4.this,"Select something bro", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta4.this,"Seleccione algo", Toast.LENGTH_LONG).show();
                 } else{
-                    Toast.makeText(Pregunta4.this,"Incorrect", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta4.this,"Incorrecto", Toast.LENGTH_LONG).show();
                     Intent intent = getIntent();
                     int points = intent.getIntExtra("myPoints",0);
                     String page = "4";
