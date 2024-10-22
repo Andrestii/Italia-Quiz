@@ -34,6 +34,15 @@ public class Pregunta2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Pregunta2.this,"Incorrect", Toast.LENGTH_LONG).show();
+                Intent intent = getIntent();
+                int points = intent.getIntExtra("myPoints",0);
+                String page = "2";
+
+                Intent myIntent = new Intent(Pregunta2.this, RespuestaNo.class);
+                points-=2;
+                myIntent.putExtra("myPoints", points);
+                myIntent.putExtra("myPage", page);
+                startActivity(myIntent);
             }
         });
 
@@ -42,8 +51,10 @@ public class Pregunta2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Pregunta2.this,"Correct", Toast.LENGTH_LONG).show();
+
                 Intent intent = getIntent();
                 int points = intent.getIntExtra("myPoints",0);
+
                 Intent myIntent = new Intent(Pregunta2.this, Pregunta3.class);
                 points+=3;
                 myIntent.putExtra("myPoints", points);
@@ -55,6 +66,15 @@ public class Pregunta2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Pregunta2.this,"Incorrect", Toast.LENGTH_LONG).show();
+                Intent intent = getIntent();
+                int points = intent.getIntExtra("myPoints",0);
+                String page = "2";
+
+                Intent myIntent = new Intent(Pregunta2.this, RespuestaNo.class);
+                points-=2;
+                myIntent.putExtra("myPoints", points);
+                myIntent.putExtra("myPage", page);
+                startActivity(myIntent);
             }
         });
 
@@ -62,6 +82,15 @@ public class Pregunta2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Pregunta2.this,"Incorrect", Toast.LENGTH_LONG).show();
+                Intent intent = getIntent();
+                int points = intent.getIntExtra("myPoints",0);
+                String page = "2";
+
+                Intent myIntent = new Intent(Pregunta2.this, RespuestaNo.class);
+                points-=2;
+                myIntent.putExtra("myPoints", points);
+                myIntent.putExtra("myPage", page);
+                startActivity(myIntent);
             }
         });
     }

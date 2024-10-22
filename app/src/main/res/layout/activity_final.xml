@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_pizza"
-    tools:context=".RespuestaNo">
+    tools:context=".Final">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,34 +19,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¡Respuesta incorrecta!\n¿Quieres reiniciar?"
-            android:textAlignment="center"
-            android:textSize="35sp"
-            android:textColor="@color/white"/>
-
-        <LinearLayout
+            android:id="@+id/scoreText"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tu puntuación final es:"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/restartBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Volver"
-                android:background="@drawable/title_custom"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/continueBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Continuar"
-                android:background="@drawable/title_custom"/>
-        </LinearLayout>
+        <TextView
+            android:id="@+id/scoreNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0/15 pts"
+            android:textSize="80sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/scoreText" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

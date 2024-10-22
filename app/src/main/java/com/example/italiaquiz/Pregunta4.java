@@ -58,7 +58,15 @@ public class Pregunta4 extends AppCompatActivity {
                     Toast.makeText(Pregunta4.this,"Select something bro", Toast.LENGTH_LONG).show();
                 } else{
                     Toast.makeText(Pregunta4.this,"Incorrect", Toast.LENGTH_LONG).show();
-                    // INSERIRE PER
+                    Intent intent = getIntent();
+                    int points = intent.getIntExtra("myPoints",0);
+                    String page = "4";
+
+                    Intent myIntent = new Intent(Pregunta4.this, RespuestaNo.class);
+                    points-=2;
+                    myIntent.putExtra("myPoints", points);
+                    myIntent.putExtra("myPage", page);
+                    startActivity(myIntent);
                 }
             }
         });

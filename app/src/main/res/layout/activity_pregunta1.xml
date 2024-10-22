@@ -5,12 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_pizza"
     tools:context=".Pregunta1">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical"
+        android:background="@drawable/background_questions"
+        android:padding="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,6 +24,9 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
             android:text="¿Cuál es la capital de Italia?" />
 
         <RadioGroup
@@ -31,31 +38,36 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Milán" />
+                android:text="Milán"
+                android:textColor="@color/white"/>
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Florencia" />
+                android:text="Florencia"
+                android:textColor="@color/white"/>
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Roma" />
+                android:text="Roma"
+                android:textColor="@color/white"/>
 
             <RadioButton
                 android:id="@+id/radioButton4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Venecia" />
+                android:text="Venecia"
+                android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonSubmit4"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Continuar"
+                android:background="@drawable/title_custom"/>
         </RadioGroup>
 
     </LinearLayout>

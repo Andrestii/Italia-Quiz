@@ -45,12 +45,19 @@ public class Pregunta3 extends AppCompatActivity {
                     points+=3;
                     myIntent.putExtra("myPoints", points);
                     startActivity(myIntent);
-                    // INSERIRE PER ANDARE ALLA PROSSIMA DOMANDA
                 } else if(selectedText.equals("Null")){
                     Toast.makeText(Pregunta3.this,"Select something bro", Toast.LENGTH_LONG).show();
                 } else{
                     Toast.makeText(Pregunta3.this,"Incorrect", Toast.LENGTH_LONG).show();
-                    // INSERIRE PER
+                    Intent intent = getIntent();
+                    int points = intent.getIntExtra("myPoints",0);
+                    String page = "3";
+
+                    Intent myIntent = new Intent(Pregunta3.this, RespuestaNo.class);
+                    points-=2;
+                    myIntent.putExtra("myPoints", points);
+                    myIntent.putExtra("myPage", page);
+                    startActivity(myIntent);
                 }
             }
         });

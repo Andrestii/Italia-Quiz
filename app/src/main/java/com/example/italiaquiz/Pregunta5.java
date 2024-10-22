@@ -50,18 +50,23 @@ public class Pregunta5 extends AppCompatActivity {
                     Toast.makeText(Pregunta5.this,"Correct", Toast.LENGTH_LONG).show();
                     Intent intent = getIntent();
                     int points = intent.getIntExtra("myPoints",0);
-                    // Toast.makeText(Pregunta5.this,"TEST "+points, Toast.LENGTH_LONG).show();
-                    /*
-                    Intent myIntent = new Intent(Pregunta5.this, Pregunta3.class);
+                    Intent myIntent = new Intent(Pregunta5.this, Final.class);
                     points+=3;
                     myIntent.putExtra("myPoints", points);
                     startActivity(myIntent);
-                    */
                 } else if(selectedText.equals("Null")){
                     Toast.makeText(Pregunta5.this,"Select something bro", Toast.LENGTH_LONG).show();
                 } else{
                     Toast.makeText(Pregunta5.this,"Incorrect", Toast.LENGTH_LONG).show();
-                    // INSERIRE PE
+                    Intent intent = getIntent();
+                    int points = intent.getIntExtra("myPoints",0);
+                    String page = "5";
+
+                    Intent myIntent = new Intent(Pregunta5.this, RespuestaNo.class);
+                    points-=2;
+                    myIntent.putExtra("myPoints", points);
+                    myIntent.putExtra("myPage", page);
+                    startActivity(myIntent);
                 }
             }
         });

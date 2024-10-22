@@ -5,16 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_pizza"
     tools:context=".Pregunta4">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical"
+        android:background="@drawable/background_questions"
+        android:padding="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="320sp"
@@ -22,8 +26,10 @@
             android:background="@drawable/firenze_duomo" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:text="¿Dónde está ubicado el monumento en la imagen?" />
 
         <RadioGroup
@@ -35,31 +41,36 @@
                 android:id="@+id/radioButton5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nápoles" />
+                android:text="Nápoles"
+                android:textColor="@color/white"/>
 
             <RadioButton
                 android:id="@+id/radioButton6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Milán" />
+                android:text="Milán"
+                android:textColor="@color/white"/>
 
             <RadioButton
                 android:id="@+id/radioButton7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Florencia" />
+                android:text="Florencia"
+                android:textColor="@color/white"/>
 
             <RadioButton
                 android:id="@+id/radioButton8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Roma" />
+                android:text="Roma"
+                android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonSubmit4"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:background="@drawable/title_custom"
+                android:text="Continuar" />
         </RadioGroup>
     </LinearLayout>
 
