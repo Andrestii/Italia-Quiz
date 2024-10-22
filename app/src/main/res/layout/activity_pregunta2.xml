@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pregunta2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="¿Cuál de estas fotos representa Nápoles?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5sp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonImg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/colosseo_2"
+                android:layout_margin="5sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonImg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/quartieri_spagnoli"
+                android:layout_margin="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5sp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonImg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/duomo"
+                android:layout_margin="5sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonImg4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/venezia"
+                android:layout_margin="5sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
