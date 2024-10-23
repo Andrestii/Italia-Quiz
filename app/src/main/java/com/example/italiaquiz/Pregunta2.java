@@ -33,7 +33,7 @@ public class Pregunta2 extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() { // WRONG
             @Override
             public void onClick(View view) {
-                Toast.makeText(Pregunta2.this,"Incorrecto", Toast.LENGTH_LONG).show();
+                Toast.makeText(Pregunta2.this,"Incorrecto\t-2 pts", Toast.LENGTH_LONG).show();
                 Intent intent = getIntent();
                 int points = intent.getIntExtra("myPoints",0);
                 String page = "2";
@@ -50,7 +50,7 @@ public class Pregunta2 extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(Pregunta2.this,"Correcto", Toast.LENGTH_LONG).show();
+                Toast.makeText(Pregunta2.this,"Correcto\t+3 pts", Toast.LENGTH_LONG).show();
 
                 Intent intent = getIntent();
                 int points = intent.getIntExtra("myPoints",0);
@@ -65,7 +65,7 @@ public class Pregunta2 extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() { // WRONG
             @Override
             public void onClick(View view) {
-                Toast.makeText(Pregunta2.this,"Incorrecto", Toast.LENGTH_LONG).show();
+                Toast.makeText(Pregunta2.this,"Incorrecto\t-2 pts", Toast.LENGTH_LONG).show();
                 Intent intent = getIntent();
                 int points = intent.getIntExtra("myPoints",0);
                 String page = "2";
@@ -81,7 +81,7 @@ public class Pregunta2 extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() { // WRONG
             @Override
             public void onClick(View view) {
-                Toast.makeText(Pregunta2.this,"Incorrecto", Toast.LENGTH_LONG).show();
+                Toast.makeText(Pregunta2.this,"Incorrecto\t-2 pts", Toast.LENGTH_LONG).show();
                 Intent intent = getIntent();
                 int points = intent.getIntExtra("myPoints",0);
                 String page = "2";

@@ -38,7 +38,7 @@ public class Pregunta3 extends AppCompatActivity {
             public void onClick(View view){
                 String selectedText = spinner.getSelectedItem().toString();
                 if(selectedText.equals("Azul Claro")){
-                    Toast.makeText(Pregunta3.this,"Correcto", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta3.this,"Correcto\t+3 pts", Toast.LENGTH_LONG).show();
                     Intent intent = getIntent();
                     int points = intent.getIntExtra("myPoints",0);
                     Intent myIntent = new Intent(Pregunta3.this, Pregunta4.class);
@@ -48,7 +48,7 @@ public class Pregunta3 extends AppCompatActivity {
                 } else if(selectedText.equals("Null")){
                     Toast.makeText(Pregunta3.this,"Seleccione algo", Toast.LENGTH_LONG).show();
                 } else{
-                    Toast.makeText(Pregunta3.this,"Incorrecto", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta3.this,"Incorrecto\t-2 pts", Toast.LENGTH_LONG).show();
                     Intent intent = getIntent();
                     int points = intent.getIntExtra("myPoints",0);
                     String page = "3";

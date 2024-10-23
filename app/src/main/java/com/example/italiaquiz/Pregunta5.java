@@ -47,7 +47,7 @@ public class Pregunta5 extends AppCompatActivity {
                     selectedText = radioButton12.getText().toString();
 
                 if(selectedText.equals("Verde, blanco y rojo")){
-                    Toast.makeText(Pregunta5.this,"Correcto", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta5.this,"Correcto\t+3 pts", Toast.LENGTH_LONG).show();
                     Intent intent = getIntent();
                     int points = intent.getIntExtra("myPoints",0);
                     Intent myIntent = new Intent(Pregunta5.this, Final.class);
@@ -57,7 +57,7 @@ public class Pregunta5 extends AppCompatActivity {
                 } else if(selectedText.equals("Null")){
                     Toast.makeText(Pregunta5.this,"Seleccione algo", Toast.LENGTH_LONG).show();
                 } else{
-                    Toast.makeText(Pregunta5.this,"Incorrecto", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Pregunta5.this,"Incorrecto\t-2 pts", Toast.LENGTH_LONG).show();
                     Intent intent = getIntent();
                     int points = intent.getIntExtra("myPoints",0);
                     String page = "5";
